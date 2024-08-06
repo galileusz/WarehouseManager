@@ -14,7 +14,7 @@ namespace WarehouseManager.Infrastructure.Repositories;
 public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
 {
     private readonly IDbContextFactory<ApplicationDbContext> _dbContextFactory;
-    private ApplicationDbContext _context => _dbContextFactory.CreateDbContext();
+    protected ApplicationDbContext _context => _dbContextFactory.CreateDbContext();
 
     public RepositoryBase(IDbContextFactory<ApplicationDbContext> dbContextFactory)
     {
