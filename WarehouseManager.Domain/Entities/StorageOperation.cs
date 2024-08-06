@@ -1,6 +1,6 @@
 ﻿namespace WarehouseManager.Domain.Entities;
 
-public class Operation
+public class StorageOperation
 {
     public int Id { get; set; }
     public EOperationType OperationType { get; set; }

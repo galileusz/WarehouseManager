@@ -1,6 +1,6 @@
 ﻿namespace WarehouseManager.Domain.Entities;
 
-public class Component
+public class StorageComponent
 {
     public int Id { get; set; }
     public string Name { get; set; }
